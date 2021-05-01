@@ -8,21 +8,34 @@ using namespace std;
 
 int main() {
 
-int input;
-int range;
+int highRange;
+int lowRange;
+int even;
+int odd;
 
 srand(time(NULL));
 
 std::cout << "please enter the amount of numbers you want to test:" << '\n';
 std::cin >> numAmount;
 
-std::cout << "please enter the range you want to generate in:" << '\n';
-std::cin >> range;
+std::cout << "please enter the start of the range you want to generate in:" << '\n';
+std::cin >> lowRange;
+
+std::cout << "please enter the end of the range you want to generate in:" << '\n';
+std::cin >> highRange;
 
 
 for (size_t limiter = 0; limiter < numAmount; limiter++) {
-  int randomNumberSet = rand() % range + 1;
-}
+  int randomNumberSet = rand() % highRange + lowRange + 1;
 
-  return 0;
+  int numberCheck = randomNumberSet % 2;
+
+
+if (numberCheck == 0) {
+  even++;
+} else {
+  odd++;
+}
+}
+std::cout << "the amout of even numbers is: " << even << "\nthe amount of odd numbers is:" << odd;
 }

@@ -37,5 +37,5 @@ if (numberCheck == 0) {
   odd++;
 }
 }
-std::cout << "the amout of even numbers is: " << even << "\nthe amount of odd numbers is:" << odd;
+std::cout << "random numbers between "<< lowRange << " and " << highRange << "\n******************************************************************\n" << randomNumberSet << "\n\n\n the amout of even numbers is: " << even << "\nthe amount of odd numbers is:" << odd;
 }
